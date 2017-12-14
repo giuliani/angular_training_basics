@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router'
 
 import { RepublicModule } from './republic/republic.module';
 import { DarkModule } from './dark/dark.module';
+import { LightModule } from './light/light.module';
 import { AppRoutingModule } from './app.routing';
 import { AppComponent } from './app.component';
 // import { NotFoundComponent } from './not-found.component';
@@ -20,6 +21,7 @@ import { AppComponent } from './app.component';
     BrowserModule,
     FormsModule,
     DarkModule,
+    LightModule,
     RepublicModule,
     AppRoutingModule
   ],

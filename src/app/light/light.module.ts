@@ -1,10 +1,18 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+
+import { LightRoutingModule } from './light.routing';
+import { JediListComponent } from './jedi-list/jedi-list.component';
+import { LightService } from '../services/light.service';
 
 @NgModule({
   imports: [
-    CommonModule
+    BrowserModule,
+    FormsModule,
+    LightRoutingModule
   ],
-  declarations: []
+  declarations: [JediListComponent],
+  providers: [LightService]
 })
 export class LightModule { }
